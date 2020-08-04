@@ -109,7 +109,7 @@ class Store {
         name: 'yearn.finance',
         address: config.yfiAddress,
         abi: config.yfiABI,
-        symbol: 'YFI',
+        symbol: 'YYFFII',
         balance: 0,
         decimals: 18,
         rewardAddress: '0xfc1e690f61efd961294b3e1ce3313fbd8aa4f85d',
@@ -122,7 +122,7 @@ class Store {
           id: 'yearn',
           name: 'yearn',
           website: 'curve.fi/y',
-          link: 'https://curve.fi/y',
+          link: 'http://curve.fi/y',
           depositsEnabled: false,
           tokens: [
             {
@@ -133,7 +133,7 @@ class Store {
               decimals: 18,
               rewardsAddress: config.yCurveFiRewardsAddress,
               rewardsABI: config.yCurveFiRewardsABI,
-              rewardsSymbol: 'YFI',
+              rewardsSymbol: 'YYFFII',
               decimals: 18,
               balance: 0,
               stakedBalance: 0,
@@ -145,7 +145,7 @@ class Store {
           id: 'Balancer',
           name: 'Balancer',
           website: 'pools.balancer.exchange',
-          link: 'https://pools.balancer.exchange/#/pool/0x60626db611a9957C1ae4Ac5b7eDE69e24A3B76c5',
+          link: 'http://pools.balancer.exchange/#/pool/0x60626db611a9957C1ae4Ac5b7eDE69e24A3B76c5',
           depositsEnabled: false,
           tokens: [
             {
@@ -156,7 +156,7 @@ class Store {
               decimals: 18,
               rewardsAddress: config.balancerRewardsAddress,
               rewardsABI: config.balancerRewardsABI,
-              rewardsSymbol: 'YFI',
+              rewardsSymbol: 'YYFFII',
               decimals: 18,
               balance: 0,
               stakedBalance: 0,
@@ -168,7 +168,7 @@ class Store {
           id: 'Governance',
           name: 'Governance',
           website: 'pools.balancer.exchange',
-          link: 'https://pools.balancer.exchange/#/pool/0x95c4b6c7cff608c0ca048df8b81a484aa377172b',
+          link: 'http://pools.balancer.exchange/#/pool/0x95c4b6c7cff608c0ca048df8b81a484aa377172b',
           depositsEnabled: false,
           tokens: [
             {
@@ -179,7 +179,7 @@ class Store {
               decimals: 18,
               rewardsAddress: config.governanceAddress,
               rewardsABI: config.governanceABI,
-              rewardsSymbol: 'YFI',
+              rewardsSymbol: 'YYFFII',
               decimals: 18,
               balance: 0,
               stakedBalance: 0,
@@ -190,14 +190,14 @@ class Store {
         {
           id: 'FeeRewards',
           name: 'Fee Rewards',
-          website: 'ygov.finance',
-          link: 'https://ygov.finance/',
+          website: 'yyffiifinance.cf',
+          link: 'http://yyffiifinance.cf/',
           depositsEnabled: false,
           tokens: [
             {
               id: 'yfi',
               address: config.yfiAddress,
-              symbol: 'YFI',
+              symbol: 'YYFFII',
               abi: config.yfiABI,
               decimals: 18,
               rewardsAddress: config.feeRewardsAddress,
@@ -213,14 +213,14 @@ class Store {
         {
           id: 'GovernanceV2',
           name: 'Governance V2',
-          website: 'ygov.finance',
-          link: 'https://ygov.finance/',
+          website: 'yyffiifinance.cf',
+          link: 'http://yyffiifinance.cf/',
           depositsEnabled: true,
           tokens: [
             {
               id: 'yfi',
               address: config.yfiAddress,
-              symbol: 'YFI',
+              symbol: 'YYFFII',
               abi: config.yfiABI,
               decimals: 18,
               rewardsAddress: config.governanceV2Address,
@@ -1216,7 +1216,7 @@ class Store {
 
   _getGasPrice = async () => {
     try {
-      const url = 'https://gasprice.poa.network/'
+      const url = 'http://gasprice.poa.network/'
       const priceString = await rp(url);
       const priceJSON = JSON.parse(priceString)
       if(priceJSON) {
